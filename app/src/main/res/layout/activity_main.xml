@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Agregue firma "
+        android:fontFamily="sans-serif-black"
+        android:textSize="20dp"
+        android:textStyle="normal"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <LinearLayout
+
+        android:layout_gravity="center"
+        android:elevation="10dp"
+        android:tooltipText="Espacio para firma"
+        android:outlineAmbientShadowColor="@color/black"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:orientation="vertical">
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/descripcion"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="44dp"
+            android:focusable="true"
+            android:hint="Descripcion"
+            app:layout_constraintHorizontal_bias="0.449"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:autofillHints=""
+            tools:ignore="LabelFor" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/guardar"
+                android:layout_width="234dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:background="@color/teal_200"
+                android:text="Salvar"
+                android:textColor="@color/white"
+
+                app:iconTint="@color/teal_200"
+                app:layout_constraintBottom_toTopOf="@+id/limpiar"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.578"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></Button>
+
+            <Button
+                android:id="@+id/limpiar"
+                android:layout_width="222dp"
+                android:layout_height="60dp"
+
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:background="@color/black"
+                android:text="Limpiar"
+
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.61"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints"></Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
